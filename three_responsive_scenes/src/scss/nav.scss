@@ -1,0 +1,82 @@
+/*------ABOUT-SEE MORE---------- */
+.header-container {
+  height: 100vh;
+  margin: auto;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: 0px solid #000;
+  border-bottom: 0px solid #000;
+  background-color: #fff;
+
+  nav {
+    list-style-type: none;
+    .linnko {
+      color: #000;
+      text-decoration: none;
+      padding-bottom: 3px;
+      border-bottom: 4px solid transparent;
+      transition: border-bottom 0.5s ease-in-out;
+
+      &:hover {
+        padding-bottom: 3px;
+        border-bottom-color: #333333;
+      }
+    }
+    .cube1 {
+      position: fixed;
+      top: 50%;
+      left: 20px;
+      transform-origin: 0 0;
+      transform: rotate(-90deg) translate(-50%, 0);
+    }
+
+    .cube2 {
+      position: fixed;
+      top: 50%;
+      right: 20px;
+
+      transform-origin: 100% 0;
+      transform: rotate(90deg) translate(50%, 0);
+    }
+
+    .cube3 {
+      position: fixed;
+
+      top: 20px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    .cube4 {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translate(-50%, 10%);
+    }
+  }
+
+  /* ------ */
+  .texto-dos {
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    text-align: center;
+    line-height: 59px;
+    font-size: 3.6rem;
+    letter-spacing: 2px;
+    transform: translate(-50%, -50%);
+    font-family: "Poppins-light";
+  }
+
+  /* img */
+  img.navi-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    transform: translate(-50%, -50%);
+    border: 5px solid #000;
+  }
+}
