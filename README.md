@@ -1,6 +1,5 @@
-
 # BASIC CUBE and FLAG (responsive)
 
-- tutorial result
+- In the following repo you will learn how to create a responsive scene (zoom in and zoom out )
 
 [<img src="./src/images/cube-responsive_several-images_.gif" />](https://github.com/nadiamariduena/three-js/tree/master/three_responsive_scenes)
