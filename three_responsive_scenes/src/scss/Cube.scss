@@ -52,55 +52,35 @@
 //
 //
 
-.box-animationFlagTwo {
-  padding: 5em 1em 2em 1em;
-  display: grid;
-  grid-gap: 0em;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  // the auto fit will make it adaptable to the device.
-  // the minmax means that the box will always keep that size, unless i change it.
-  // if you dont add the fraction, leaving alone the 250px, the box will occupy the 100% width, but using the fraction will put it in 2 rows.
-  background-color: rgb(37, 145, 27);
-
-  .flagTwoBox {
-    margin: 0;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.9);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font: 12px sans-serif;
-  }
-  button {
-    background: gray;
-    color: white;
-    margin: 20px;
-    border: 0;
-    border-radius: 2px;
-    padding: 6px 12px;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
-  }
-  button:hover {
-    background: dimgray;
-  }
-  :focus {
-    outline: none;
-  }
-
-  .flagTwo {
-    width: 90%;
-    margin: 0 5%;
-    text-align: center;
-    max-width: 800px;
-    border-radius: 5px;
-    overflow: hidden;
-    margin-bottom: 20px;
-  }
+button {
+  background: gray;
+  color: white;
+  margin: 20px;
+  border: 0;
+  border-radius: 2px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+button:hover {
+  background: dimgray;
+}
+:focus {
+  outline: none;
 }
 
-//
+.flagTwo {
+  width: 90%;
+  margin: 0 5%;
+  background: transparent;
+  text-align: center;
+  max-width: 900px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+//----------------
 //
 //
 
@@ -163,60 +143,3 @@
 //
 //
 //
-
-.flagZoom-wrapper {
-  padding: 5em 0em 2em 0em;
-  display: grid;
-  grid-gap: 0em;
-  grid-template-columns: repeat(auto-fit, minmax(260px));
-  // the auto fit will make it adaptable to the device.
-  // the minmax means that the box will always keep that size, unless i change it.
-  // if you dont add the fraction, leaving alone the 250px, the box will occupy the 100% width, but using the fraction will put it in 2 rows.
-  background-color: rgb(27, 29, 145);
-
-  .flagZoom-child {
-    margin: 0;
-    overflow: hidden;
-    background: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font: 12px sans-serif;
-  }
-
-  .flagZoomBox {
-    width: 90%;
-    margin: 0 5%;
-    background: #a13030;
-    text-align: center;
-    max-width: 900px;
-    border-radius: 5px;
-    overflow: hidden;
-    margin-bottom: 20px;
-  }
-}
-
-.button-cube-original-zoom {
-  background-color: yellow;
-
-  p {
-    color: red;
-  }
-  button.btn-zoom-original {
-    background: gray;
-    color: white;
-    margin: 20px;
-    border: 0;
-    border-radius: 2px;
-    padding: 6px 12px;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
-  }
-  button:hover {
-    background: dimgray;
-  }
-  :focus {
-    outline: none;
-  }
-}

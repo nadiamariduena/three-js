@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import * as THREE from "three";
 //
 //
@@ -70,14 +69,19 @@ class CubeTwoZoomInOut extends Component {
     //
     // 6  ******
     //
-    this.camera.position.z = 5; // is used here to set some distance from a cube that is located at z = 0
+    this.camera.position.z = 2.6; // is used here to set some distance from a cube that is located at z = 0
     // OrbitControls allow a camera to orbit around the object
     // https://threejs.org/docs/#examples/controls/OrbitControls
     this.controls = new OrbitControls(this.camera, this.el);
     //
     //
     //
-    this.renderer = new THREE.WebGLRenderer();
+    this.renderer = new THREE.WebGLRenderer({
+      // set the transparency of the scene, otherwise its black
+      alpha: true,
+      // will make the edges smooth
+      antialias: true,
+    });
     this.renderer.setSize(width, height);
     // here you append it to the jsx
     this.el.appendChild(this.renderer.domElement); // mount using React ref
@@ -108,37 +112,37 @@ class CubeTwoZoomInOut extends Component {
     //
     const material = new THREE.MeshFaceMaterial([
       new THREE.MeshBasicMaterial({
-        map: THREE.ImageUtils.loadTexture("/images/fluxusshop_2.gif"),
+        map: THREE.ImageUtils.loadTexture("/images/pol.svg"),
         emissive: 0x072534,
         side: THREE.DoubleSide,
         flatShading: true,
       }),
       new THREE.MeshBasicMaterial({
-        map: THREE.ImageUtils.loadTexture("/images/po1_meyokosite.jpg"),
+        map: THREE.ImageUtils.loadTexture("/images/9.jpg"),
         emissive: 0x072534,
         side: THREE.DoubleSide,
         flatShading: true,
       }),
       new THREE.MeshBasicMaterial({
-        map: THREE.ImageUtils.loadTexture("/images/fluxusshop_2.gif"),
+        map: THREE.ImageUtils.loadTexture("/images/meyoko_img_welcomehome.jpg"),
         emissive: 0x072534,
         side: THREE.DoubleSide,
         flatShading: true,
       }),
       new THREE.MeshBasicMaterial({
-        map: THREE.ImageUtils.loadTexture("/images/po1_meyokosite.jpg"),
+        map: THREE.ImageUtils.loadTexture("/images/city-camera.jpg"),
         emissive: 0x072534,
         side: THREE.DoubleSide,
         flatShading: true,
       }),
       new THREE.MeshBasicMaterial({
-        map: THREE.ImageUtils.loadTexture("/images/fluxusshop_2.gif"),
+        map: THREE.ImageUtils.loadTexture("/images/pol.svg"),
         emissive: 0x072534,
         side: THREE.DoubleSide,
         flatShading: true,
       }),
       new THREE.MeshBasicMaterial({
-        map: THREE.ImageUtils.loadTexture("/images/po1_meyokosite.jpg"),
+        map: THREE.ImageUtils.loadTexture("/images/9.jpg"),
         emissive: 0x072534,
         side: THREE.DoubleSide,
         flatShading: true,
@@ -199,20 +203,12 @@ class CubeTwoZoomInOut extends Component {
 
   render() {
     return (
-      <div className="box-animationFlagTwo">
-        {/* <div style={style} ref={ref => (this.el = ref)} /> */}
-        <div className="flagTwoBox">
-          <div
-            style={style}
-            className="flagTwo"
-            ref={(ref) => (this.el = ref)}
-          />
-        </div>
-      </div>
+      <div style={style} className="flagTwo" ref={(ref) => (this.el = ref)} />
     );
   }
 }
 
+export default CubeTwoZoomInOut;
 //
 //
 // END OF THE APP COMPONENT
@@ -233,28 +229,28 @@ class CubeTwoZoomInOut extends Component {
 
 */
 
-class Container extends React.Component {
-  state = { isMounted: true };
+// class Container extends React.Component {
+//   state = { isMounted: true };
 
-  render() {
-    const { isMounted = true } = this.state;
-    return (
-      <>
-        <button
-          onClick={() =>
-            this.setState((state) => ({ isMounted: !state.isMounted }))
-          }
-        >
-          {isMounted ? "Unmount" : "Mount"}
-        </button>
-        {isMounted && <CubeTwoZoomInOut />}
-        {isMounted && <div>Scroll to zoom, drag to rotate</div>}
-      </>
-    );
-  }
-}
+//   render() {
+//     const { isMounted = true } = this.state;
+//     return (
+//       <>
+//         <button
+//           onClick={() =>
+//             this.setState((state) => ({ isMounted: !state.isMounted }))
+//           }
+//         >
+//           {isMounted ? "Unmount" : "Mount"}
+//         </button>
+//         {isMounted && <CubeTwoZoomInOut />}
+//         {isMounted && <div>Scroll to zoom, drag to rotate</div>}
+//       </>
+//     );
+//   }
+// }
 
-export default Container;
+// export default Container;
 
 /*
 

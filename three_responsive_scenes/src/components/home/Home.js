@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 //
 import DtaImg from "../../jsonData/images";
+import CubeTwoZoomInOut from "../threeAnim/CubeTwoZoomInOut";
 //
 class Home extends React.Component {
   constructor(props) {
@@ -36,14 +37,16 @@ class Home extends React.Component {
             </Link>
           </li>
         </nav>
-
+        {/* 
         {DtaImg.map((img, index) => {
           return (
             <div className="img container" key={img.id}>
               <img className="navi-image" src={img.img1} />;
             </div>
           );
-        })}
+        })} */}
+
+        <CubeTwoZoomInOut />
 
         <h2 className="texto-dos">VOX ANON</h2>
       </header>

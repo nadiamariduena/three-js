@@ -6,7 +6,7 @@ const style = {
   height: 550, // we can control scene size by setting container dimensions
 };
 
-class CubeOriginalResponsive extends Component {
+class FlagZoom extends Component {
   /*
  
                 1
@@ -189,46 +189,13 @@ class CubeOriginalResponsive extends Component {
     // using ref to the functions inside the component did mount
     // THE SCENE BOX, since i want the cube nested inside some containers i will do the following
     return (
-      <div className="flagZoom-wrapper">
-        <div className="flagZoom-child">
-          <div
-            className="flagZoomBox"
-            style={style}
-            ref={(ref) => (this.element = ref)}
-          />
-        </div>
-      </div>
-    );
-  }
-}
-// NOW ADD ANOTHER COMPONENT
-class ContainerTwo extends Component {
-  state = { isMounted: true };
-  render() {
-    const { isMounted = true } = this.state;
-    return (
-      <>
-        <div className="button-cube-original-zoom">
-          <button
-            className="btn-zoom-original"
-            onClick={() =>
-              this.setState((state) => ({ isMounted: !state.isMounted }))
-            }
-          >
-            {isMounted ? "Unmount" : "Mount"}
-          </button>
-
-          {isMounted && <CubeOriginalResponsive />}
-          {isMounted && (
-            <div className="scroly">
-              <p>Scroll to zoom, drag to rotate</p>
-            </div>
-          )}
-        </div>
-      </>
+      <div
+        className="flagZoomBox"
+        style={style}
+        ref={(ref) => (this.element = ref)}
+      />
     );
   }
 }
 
-export default ContainerTwo;
-// the app here isnt app but CubeOriginalResponsive
+export default FlagZoom;
