@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 //
 import DtaImg from "../../jsonData/images";
-import CubeTwoZoomInOut from "../threeAnim/CubeTwoZoomInOut";
+import FlagZoom from "../threeAnim/FlagZoom";
+//  you only need to import the cube here and then add it to the jsx area
 //
 class Home extends React.Component {
   constructor(props) {
@@ -46,7 +47,7 @@ class Home extends React.Component {
           );
         })} */}
 
-        <CubeTwoZoomInOut />
+        <FlagZoom />
 
         <h2 className="texto-dos">VOX ANON</h2>
       </header>
