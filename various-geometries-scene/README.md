@@ -197,3 +197,5 @@ addCustomSceneObjects = () => {
 ```
 
 #### AT this point you will not see anything because the cube is on top of the sphere, and that is because we didn't add the "position" to the 2 objects.
+
+[<img src="/src/images/cube_sphere-scene-integration.gif"/>]()
