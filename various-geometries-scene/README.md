@@ -9,7 +9,7 @@
 
 <br>
 
-[<img src="/src/images/the-scene.png"/>]()
+[<img src="./src/images/the-scene.png"/>]()
 
 <br>
 <br>
@@ -198,4 +198,6 @@ addCustomSceneObjects = () => {
 
 #### AT this point you will not see anything because the cube is on top of the sphere, and that is because we didn't add the "position" to the 2 objects.
 
-[<img src="/src/images/cube_sphere-scene-integration.gif"/>]()
+<!-- [<img src="./src/images/cube-responsive_several-images_.gif" />]() -->
+
+[<img src="./src/images/cube_sphere-scene-integration.gif"/>]()
