@@ -80,7 +80,7 @@ export default ObjsScene;
 
 ```
 
-[<img   src="/src/images/air-fifth-element-broken.gif"/>]()
+[<img   src="./src/images/air-fifth-element-broken.gif"/>]()
 
 <br>
 
@@ -97,7 +97,7 @@ Error: ObjsScene(...): Nothing was returned from render. This usually means a re
 
 ##### OBVIOUSLY you cannot create a "scene" out of thin air, you need to "return" at least something to contain it, can be an empty div,h1,span etc...i will add a div
 
-[<img src="/src/images/air-fifth-element.gif"/>]()
+[<img src="./src/images/air-fifth-element.gif"/>]()
 
 #### SOME CHANGES
 
