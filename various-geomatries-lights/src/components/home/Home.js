@@ -1,7 +1,7 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 //
-import ObjsScene from "../threeAnim/ObjectsScene";
+import ObjsSceneLight from "../threeAnim/ObjectsSceneLight";
 // import FlagZoom from "../threeAnim/FlagZoom";
 //  you only need to import the cube here and then add it to the jsx area
 //
@@ -11,7 +11,7 @@ class Home extends React.Component {
     this.state = {};
   }
   render() {
-    return <ObjsScene />;
+    return <ObjsSceneLight />;
   }
 }
 
