@@ -842,30 +842,72 @@ class FlagZoom extends Component {
  
  
  */
-
+  //  Animation Loop
   startAnimationLoop = () => {
     // in the old flag  :   const t_timeClock = this.clock.getElapsedTime();
     // in this version i only have to use "this.t_timeClock"
     this.t_timeClock = this.clock.getElapsedTime();
     //
     //
+    //
+    //--------------------------------
+    //      The waves
+    // -------------------------------
+    //
     this.cube.geometry.vertices.forEach((dots_vertices) => {
+      // this.cube.rotation.x += 0.01; // for the cube
+      // this.cube.rotation.y += 0.01; /// for the cube
+      //
+      // 1 WAVE  ***
+      //
+      //
+      // // With the vertices we are going to grab all the points /vertices withing the cube/flag
+      // We are going to move them in a sine "curve"
+      // the map is going to make something for every single point, so each point is going to do a partcular thing, moving up down etc
       const waveX1 = 0.1 * Math.sin(dots_vertices.x * 2 + this.t_timeClock);
+      // 2.5 will make the wave huge and very close to the user, 0.5 is flat , 0.1 even more flattened
+      //
+      //
+      // 2 WAVE  ***
+      //
       const waveX2 =
         0.15 * Math.sin(dots_vertices.x * 3 + this.t_timeClock * 2);
+      // 0.15 is less than 0.25 , 0.25 corresponds to half of the first wave, so this 2nd wave is a "little one"
+      // const waveX2 = 0.5 * Math.sin(dots_vertices.x * 3 + t_timeClock * 2);
+      // the * 3 ,  multiplies the waves, so this wave runs on 3 in amplitude and moves twice as quick * 3 + t_timeClock * 2
+      //
+      //
+      //
+      // 3   *** third  wave | in the Y direction (i hid this one)
+      // const waveY1 = 0.1 * Math.sin(dots_vertices.y * 6 + t_timeClock * 0.1); //to slowdown the time t_timeClock * 0.5);
+      //
+      //
       dots_vertices.z = waveX1 + waveX2;
     });
-    // // its going to wave the flag smoothly
+    //
+    //
+    //
+    //
+    //
     this.cube.geometry.verticesNeedUpdate = true;
-    // this.cube.rotation.x += 0.01;
-    // this.cube.rotation.y += 0.01;
-
+    //https://threejs.org/docs/#manual/en/introduction/How-to-update-things
+    //
+    //
     this.renderer.render(this.scene, this.camera);
 
     // The window.requestAnimationFrame() method tells the browser that you wish to perform
     // an animation and requests that the browser call a specified function
     // to update an animation before the next repaint
     this.requestID = window.requestAnimationFrame(this.startAnimationLoop);
+
+    /*
+    window.requestAnimationFrame(this.startAnimationLoop);
+    
+    This will create a loop that causes the renderer to draw the scene every time the screen is refreshed (on a typical screen this means 60 times per second). If you’re new to writing games in the browser, you might say “why don’t we just create a setInterval ?” The thing is — we could, but requestAnimationFrame has a number of advantages. Perhaps the most important one is that it pauses when the user navigates to another browser tab, hence not wasting their precious processing power and battery life. ~ Three.js docs
+    
+
+    https://codeburst.io/react-16-three-js-integration-tips-2019-b6afe19c0b83
+    */
   };
   /*
  
