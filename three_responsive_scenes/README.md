@@ -7,6 +7,40 @@
 [<img src="./src/images/cube-responsive_several-images_.gif" />]()
 
   <br>
+  <br>
+## BUT BEFORE ...
+
+### What are the differences between WebGL, three.js?
+
+- WebGL: is the Javascript API that allows you to create 3D graphics in the browser. Three. js: A framework build on top of WebGL which makes it easier to create 3D graphics in the browser, it uses a canvas + WebGL to display the 3D scene.
+
+[What are the advantages of using three.js vs. WebGL](https://stackoverflow.com/questions/11966779/learning-webgl-and-three-js)
+
+###### It is not a matter of what you learn first -- you can learn them simultaneously if you want to.
+
+> This means that you need to understand:
+
+- WebGL concepts
+- Three.js
+- The underlying mathematical concepts
+
+  <br>
+
+- Three.js. **Three.js does an excellent job of abstracting away many of the details of WebG**L, so personally, I'd suggest using Three.js for your project. But remember, **Three.js is in alpha, and it is changing frequently**, so you have to be prepared for that. Most people learn Three.js by studying the examples. **Avoid outdated books and tutorials, and avoid examples from the net that link to old versions** of the library.
+
+<br>
+
+> WebGL. If you use Three.js, you don't need to know how to program in WebGL, you just need to understand the WebGL concepts. That means, that you just need to be able to read someone else's WebGL code and understand what you read. That is a lot easier than being expected to write a WebGL program yourself from scratch.
+
+<br>
+
+- You can learn the WebGL concepts sufficiently well using any of the tutorials on the net, such as the beginner's tutorial at [WebGLFundamentals.org ](https://webglfundamentals.org/) and [ Learning WebGL ](https://www.learnwebgl.brown37.net/) .
+
+  <br>
+  <hr>
+    <br>
+      <br>
+    <br>
 
 👾 👾 👾
 
