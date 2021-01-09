@@ -38,6 +38,11 @@ class ObjsScene extends Component {
     const cubeMaterial = new THREE.MeshNormalMaterial();
     // you need to add these 2 inside the this.cube() below
     this.cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
+    //  cube position
+    this.cube.position.x = -6;
+    this.cube.position.y = -6;
+    this.cube.position.z = 0;
+
     // with this you add the cube to the scene
     this.scene.add(this.cube);
 
@@ -47,6 +52,10 @@ class ObjsScene extends Component {
     const sphereGeometry = new THREE.SphereGeometry(2, 20, 20);
     const sphereMaterial = new THREE.MeshNormalMaterial();
     this.sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+    //  ball position
+    this.sphere.position.x = 6;
+    this.sphere.position.y = -6;
+    this.sphere.position.z = 0;
     // with this you add the cube to the scene
     this.scene.add(this.sphere);
   };
