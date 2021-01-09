@@ -231,9 +231,65 @@ addCustomSceneObjects = () => {
   this.sphere.position.z = 0;
   // with this you add the cube to the scene
   this.scene.add(this.sphere);
+  //
+  //--------------------------
+  // Add the Plane
 };
 ```
 
 [<img src="./src/images/cube_sphere_position.jpg" />]()
 
 - THE POSITION of the objects (on the bottom) is because of the positioning.
+
+#### ADDING THE PLANE
+
+```javascript
+// 2
+addCustomSceneObjects = () => {
+  //
+  // Add CUBE
+  const cubeGeometry = new THREE.BoxGeometry(4, 4, 4);
+  const cubeMaterial = new THREE.MeshNormalMaterial();
+  // you need to add these 2 inside the this.cube() below
+  this.cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
+  //  cube position
+  this.cube.position.x = -6;
+  this.cube.position.y = -6;
+  this.cube.position.z = 0;
+
+  // with this you add the cube to the scene
+  this.scene.add(this.cube);
+
+  //
+  //--------------------------
+  // Add SPHERE
+  const sphereGeometry = new THREE.SphereGeometry(2, 20, 20);
+  const sphereMaterial = new THREE.MeshNormalMaterial();
+  this.sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+  //  ball position
+  this.sphere.position.x = 6;
+  this.sphere.position.y = -6;
+  this.sphere.position.z = 0;
+  // with this you add the cube to the scene
+  this.scene.add(this.sphere);
+  //
+  //
+  //
+  //
+  // Add PLANE
+  const planeGeometry = new THREE.PlaneGeometry(30, 30, 100, 100);
+  const planeMaterial = new THREE.MeshNormalMaterial();
+  // var planeMaterial = new THREE.MeshLambertMaterial((color: 0xff0000));
+  this.plane = new THREE.Mesh(planeGeometry, planeMaterial);
+  //
+  //
+  this.plane.rotation.x = -0.5 * Math.PI;
+  this.plane.position.y = -10;
+
+  //
+  //
+  this.scene.add(this.plane);
+};
+```
+
+[<img src="./src/images/plane-integration.gif" />]()
