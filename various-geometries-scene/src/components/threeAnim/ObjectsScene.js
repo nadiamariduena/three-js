@@ -13,41 +13,55 @@ class ObjsScene extends Component {
   sceneSetup = () => {
     //
     // basic scene setup --------------------
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(
+    this.scene = new THREE.Scene();
+    this.camera = new THREE.PerspectiveCamera(
       75,
       window.innerWidth / window.innerHeight,
       0.1,
       1000
     );
+    this.camera.position.z = 5;
 
-    const renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    document.body.appendChild(renderer.domElement);
+    this.renderer = new THREE.WebGLRenderer();
+    this.renderer.setSize(window.innerWidth, window.innerHeight);
+    this.elObj.appendChild(this.renderer.domElement); // mount using React ref
     // basic scene setup --------------------
     //
     //
     //
   };
   // 2
-  addCustomSceneObjects = () => {};
+  addCustomSceneObjects = () => {
+    //
+    // Add CUBE
+    const cubeGeometry = new THREE.BoxGeometry(4, 4, 4);
+    const cubeMaterial = new THREE.MeshNormalMaterial();
+    // you need to add these 2 inside the this.cube() below
+    this.cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
+    // with this you add the cube to the scene
+    this.scene.add(this.cube);
+
+    //
+    //--------------------------
+    // Add SPHERE
+    const sphereGeometry = new THREE.SphereGeometry(2, 20, 20);
+    const sphereMaterial = new THREE.MeshNormalMaterial();
+    this.sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+    // with this you add the cube to the scene
+    this.scene.add(this.sphere);
+  };
+
+  //
+  //
   // 3
-  startAnimationLoop = () => {};
+  startAnimationLoop = () => {
+    this.renderer.render(this.scene, this.camera);
+  };
   //
   //
 
-  /*
-  
-  
-  
-  
-  
-  
-  
-  
-  */
   render() {
-    return <h1></h1>;
+    return <div ref={(ref) => (this.elObj = ref)}></div>;
   }
 }
 
