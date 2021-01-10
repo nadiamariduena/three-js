@@ -87,7 +87,7 @@ class ObjsScene extends Component {
   addCustomSceneObjects = () => {
     // Add CUBE
     const cubeGeometry = new THREE.BoxGeometry(2, 2, 2);
-    const cubeMaterial = new THREE.MeshLambertMaterial({
+    const cubeMaterial = new THREE.MeshStandardMaterial({
       color: 0x1900e5,
       emissive: 0x072534,
       side: THREE.DoubleSide,
@@ -114,7 +114,10 @@ class ObjsScene extends Component {
     // this.scene.add(this.cube);
     // Add SPHERE
     const sphereGeometry = new THREE.SphereGeometry(1.2, 42, 42);
-    const sphereMaterial = new THREE.MeshLambertMaterial({ color: 0xe50042 });
+    const sphereMaterial = new THREE.MeshPhongMaterial({
+      color: 0xe50042,
+      shininess: 150,
+    });
     this.sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
     //  ball position
     this.sphere.position.x = 2.6; //left - right - horizontal
@@ -154,17 +157,17 @@ class ObjsScene extends Component {
 
     //
     //
-    //
-    this.light = new THREE.PointLight(0xff0000);
-    this.light.position.y = 4.5;
-    this.scene.add(this.light);
+    // //
+    // this.light = new THREE.Light(0xff0000);
+    // this.light.position.y = 4.5;
+    // this.scene.add(this.light);
     //
     //
     //---------------------
     //     spotLight FF5733
     //---------------------
     //
-    //
+    // // THIS LIGHT IS ON THE BOTTOM
     // With the light you can see the colors you added to each geometry in the materials
     this.spotLight = new THREE.SpotLight(0xffffff);
     // spotLight.position.set( 0 , 10 , 0 );  original
@@ -178,6 +181,7 @@ class ObjsScene extends Component {
     //---------------------
     //    PointLight
     //---------------------
+    // THIS LIGHT IS ON TOP
     //with the following link, you can have a little ideo of the intensity
     //https://dnassler.github.io/creative-coding/threejs/expTriangles1/build/
     this.pointLight = new THREE.PointLight(
@@ -187,6 +191,12 @@ class ObjsScene extends Component {
     );
     this.pointLight.position.y = 200;
     this.scene.add(this.pointLight);
+    //
+    //
+    //
+    //
+    //
+    //
   };
   /*
   

@@ -18,6 +18,4 @@
 
 # Lights 01
 
-
-
-[<img src="./src/images/spotlight_poinlight_light.gif"/>](https://github.com/nadiamariduena/three-js/tree/master/various-geometries-lights-01)
+[<img src="./src/images/MeshPhongMaterial.gif"/>](https://github.com/nadiamariduena/three-js/tree/master/various-geometries-lights-01)
