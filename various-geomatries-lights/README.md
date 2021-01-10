@@ -1,4 +1,4 @@
-## Various Geometries (Lights)
+## Various Geometries (Lights 0 part)
 
 #### Find the first project related to this:
 
@@ -434,6 +434,15 @@ export default ObjsScene;
 
 <br>
 <br>
+
+[<img src="./src/images/using-orbit-to-see-better.gif"/>]()
+
+##### The magic 🌟
+
+```javascript
+this.controls = new OrbitControls(this.camera, this.elo);
+```
+
 <br>
 <br>
 
@@ -629,10 +638,4 @@ class ObjsScene extends Component {
 export default ObjsScene;
 ```
 
-### the result
-
-[<img src="./src/images/using-orbit-to-see-better.gif"/>]()
-
-```javascript
-this.controls = new OrbitControls(this.camera, this.elo);
-```
+[<img src="./src/images/preview_lights_part0.gif"/>]()

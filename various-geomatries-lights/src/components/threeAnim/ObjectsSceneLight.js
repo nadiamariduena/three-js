@@ -30,7 +30,7 @@ class ObjsScene extends Component {
     //
     this.scene = new THREE.Scene();
     this.camera = new THREE.PerspectiveCamera(
-      75, // fov = field of view
+      65, // fov = field of view
       width / height, // aspect ratio
       0.1, // near plane
       1000 // far plane
