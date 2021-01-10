@@ -174,14 +174,18 @@ class ObjsScene extends Component {
     this.spotLight.position.set(5, -50, 0); //x, y , z
     // (2, 32, 32); with this settings the light will be on the front
     this.spotLight.castShadow = true;
+    //
+    // this will remove the shadows
+    this.spotLight.visible = false;
+    //
     this.scene.add(this.spotLight);
     //
     //
-    //
+    // THIS LIGHT IS ON TOP
     //---------------------
     //    PointLight
     //---------------------
-    // THIS LIGHT IS ON TOP
+
     //with the following link, you can have a little ideo of the intensity
     //https://dnassler.github.io/creative-coding/threejs/expTriangles1/build/
     this.pointLight = new THREE.PointLight(
