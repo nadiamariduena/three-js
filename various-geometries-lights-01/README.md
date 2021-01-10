@@ -402,6 +402,9 @@ class ObjsScene extends Component {
 ## ☁️ Directional Light ☁️
 
 - _**BEFORE STARTING**_ add the following
+  <br>
+
+- this will remove the shadows
 
 >     this.spotLight.visible = false;
 
@@ -479,7 +482,7 @@ scene.add(directionalLight);
     //   Directional Light
     //---------------------
     this.directionalLight = new THREE.DirectionalLight("#ffffff");
-
+    this.directionalLight.position.set( 0 , obj.y, 0 );  // issue !!!!!!
     this.directionalLight.castShadow = true;
     this.directionalLight.shadow.mapSize.width = 512; // default
     this.directionalLight.shadow.mapSize.height = 512; // default
@@ -516,7 +519,7 @@ directionalLight.position.set(0, obj.y, 0);
 - Since the error came from a coordinate, i presumed that if i added something like a 0, it would probably work and **it did**
 
 ```javascript
-    this.directionalLight.position.set(0, 0, 0);
+this.directionalLight.position.set(0, 0, 0);
 ```
 
 > No idea if its the right thing to do here, but **the code works as expected**, maybe in the future when i will have more knowledge i will add a note on this issue.
