@@ -247,8 +247,8 @@ class ObjsScene extends Component {
     //    HemisphereLight
     //---------------------
     //
-    // this.hemisphereLight = new THREE.HemisphereLight("#87ceeb", "#f5deb3", 0.4);
-    // this.scene.add(this.hemisphereLight);
+    this.hemisphereLight = new THREE.HemisphereLight("#87ceeb", "#f5deb3", 0.4);
+    this.scene.add(this.hemisphereLight);
     //
     //
   };

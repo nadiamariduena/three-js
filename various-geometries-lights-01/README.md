@@ -1119,3 +1119,7 @@ scene.add(hemisphereLight);
 this.hemisphereLight = new THREE.HemisphereLight("#87ceeb", "#f5deb3", 0.4);
 this.scene.add(this.hemisphereLight);
 ```
+
+<br>
+
+[<img src="./src/images/HemisphereLight_preview.gif" />]();
