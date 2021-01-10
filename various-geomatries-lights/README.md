@@ -8,8 +8,13 @@
 
 [<img src="./src/images/Various_Geometries_previous.jpg"/>]()
 
-<br>
-<br>
+👾 👾 👾
+
+- The author of this tutorial is:
+  [Three.js tutorial (5): light source](https://www.kai666666.top/2020/01/30/Three.js%E6%95%99%E7%A8%8B%EF%BC%885%EF%BC%89%EF%BC%9A%E5%85%89%E6%BA%90/)
+
+👾 👾 👾
+
 <hr>
 <br>
 <br>
