@@ -6,6 +6,9 @@
 
 <br>
 <br>
+<hr>
+<br>
+<br>
 
 # Lights 0
 
@@ -15,7 +18,17 @@
 
 <br>
 <br>
+<hr>
+<br>
+<br>
 
 # Lights 01
 
 [<img src="./src/images/MeshPhongMaterial.gif"/>](https://github.com/nadiamariduena/three-js/tree/master/various-geometries-lights-01)
+
+<br>
+
+- PointLight
+- Directional Light
+- AmbientLight
+- HemisphereLight 
