@@ -157,17 +157,17 @@ class ObjsScene extends Component {
 
     //
     //
-    // //
-    // this.light = new THREE.Light(0xff0000);
-    // this.light.position.y = 4.5;
-    // this.scene.add(this.light);
     //
+
     //
+    //THIS LIGHT IS ON THE BOTTOM
     //---------------------
     //     spotLight FF5733
     //---------------------
     //
-    // // THIS LIGHT IS ON THE BOTTOM
+    //
+    //
+    //
     // With the light you can see the colors you added to each geometry in the materials
     this.spotLight = new THREE.SpotLight(0xffffff);
     // spotLight.position.set( 0 , 10 , 0 );  original
@@ -181,11 +181,17 @@ class ObjsScene extends Component {
     this.scene.add(this.spotLight);
     //
     //
+    //
+    //
+
+    //
     // THIS LIGHT IS ON TOP
     //---------------------
     //    PointLight
     //---------------------
-
+    //
+    //
+    //
     //with the following link, you can have a little ideo of the intensity
     //https://dnassler.github.io/creative-coding/threejs/expTriangles1/build/
     this.pointLight = new THREE.PointLight(
@@ -203,6 +209,9 @@ class ObjsScene extends Component {
     //---------------------
     //   Directional Light
     //---------------------
+    //
+    //
+    //
     this.directionalLight = new THREE.DirectionalLight("#ffffff");
     this.directionalLight.position.set(0, 0, 0);
     this.directionalLight.castShadow = true;
@@ -221,10 +230,21 @@ class ObjsScene extends Component {
     //
     //
     this.directionalLight.target = this.plane;
+    //
+    //
+    //
+    //---------------------
+    //    AmbientLight
+    //---------------------
+
+    this.ambientLight = new THREE.AmbientLight("#9370DB");
+    this.scene.add(this.ambientLight);
+    //
+    //
+    //
   };
+
   /*
-  
-  
   
   
   
