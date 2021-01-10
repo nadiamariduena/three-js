@@ -390,7 +390,7 @@ class ObjsScene extends Component {
 
 [Three.js Lighting Tutorial (JavaScript) | Light Types Explained!](https://www.youtube.com/watch?v=T6PhV4Hz0u4)
 
-[<img src="./src/images/youtube-explanation-lights.gif"/>](https://threejsfundamentals.org/threejs/lessons/threejs-materials.html)
+[<img src="./src/images/youtube-explanation-lights.gif"/>](https://www.youtube.com/watch?v=T6PhV4Hz0u4)
 
 <br>
 <br>
@@ -401,7 +401,7 @@ class ObjsScene extends Component {
 
 ## ☁️ Directional Light ☁️
 
-- _BEFORE STARTING_ add the following
+- _**BEFORE STARTING**_ add the following
 
 >     this.spotLight.visible = false;
 
@@ -434,3 +434,95 @@ this.scene.add(this.spotLight);
 ```
 
 <br>
+
+- **DirectionalLight**, as its name implies, **is a parallel linear light source** (parallel light source). _The rays of the parallel light source are parallel and can produce shadows_, and all the lights have the same intensity. **It has** an **target** attribute **to indicate which position to irradiate**.
+
+<br>
+
+- In addition, you can use **directionalLight.shadow.camera.left** or **directionalLight.shadow.camera.right** to set the left margin of the shadow.
+
+```javascript
+directionalLight.shadow.camera.left = -15;
+directionalLight.shadow.camera.right = 15;
+```
+
+- Similarly, you can also set the right, top, and bottom equal margins, so that you can determine the range of a shadow (the larger the shadow, the better the performance The worse, so parallel light needs to set the shadow range).
+
+<br>
+
+##### We replace the spot light source in the first example with a parallel light source, as follows:
+
+```javascript
+// REPLACE THIS ***
+// Add a light source
+var directionalLight = new THREE.DirectionalLight( '#ffffff' );
+directionalLight.position.set( 0 , obj.y, 0 );
+directionalLight.castShadow = true ;
+directionalLight.shadow.mapSize.width = 512 ;   / / default
+ directionalLight.shadow.mapSize.height = 512 ; // default
+ directionalLight.shadow.camera.near = 0.5 ;
+directionalLight.shadow.camera.far = 1000 ;
+directionalLight.shadow.camera.left = -15 ;
+directionalLight.shadow. camera.right =15 ;
+directionalLight.shadow.camera.top = 15 ;
+directionalLight.shadow.camera.bottom = -15 ;
+scene.add(directionalLight);
+
+// The light points to the flat ground
+ directionalLight.target = plane;
+//
+//
+// FOR THIS
+    //
+    //
+    //---------------------
+    //   Directional Light
+    //---------------------
+    this.directionalLight = new THREE.DirectionalLight("#ffffff");
+
+    this.directionalLight.castShadow = true;
+    this.directionalLight.shadow.mapSize.width = 512; // default
+    this.directionalLight.shadow.mapSize.height = 512; // default
+    this.directionalLight.shadow.camera.near = 0.5;
+    this.directionalLight.shadow.camera.far = 1000;
+    this.directionalLight.shadow.camera.left = -15;
+    this.directionalLight.shadow.camera.right = 15;
+    this.directionalLight.shadow.camera.top = 15;
+    this.directionalLight.shadow.camera.bottom = -15;
+    this.scene.add(this.directionalLight);
+
+    // The light points to the flat ground
+    //
+    //
+    //
+    this.directionalLight.target = this.plane;
+
+```
+
+<br>
+
+## THERE IS AN ERROR 🔺
+
+- When adding this line:
+
+```javascript
+directionalLight.position.set(0, obj.y, 0);
+```
+
+- I thought it was due to the original code (since its translated to english and sometimes it makes some mistakes) but it wasn't that, so maybe he forgot to add a variable in the tutorial?
+
+<br>
+
+- Since the error came from a coordinate, i presumed that if i added something like a 0, it would probably work and **it did**
+
+```javascript
+    this.directionalLight.position.set(0, 0, 0);
+```
+
+> No idea if its the right thing to do here, but **the code works as expected**, maybe in the future when i will have more knowledge i will add a note on this issue.
+
+<br>
+
+[THIS IS HOW WE FIX PROBLEMS ON RUSSIAN SPACE STATION!!!!!!](https://www.youtube.com/watch?v=dEkOT3IngMQ);
+
+[<img src="./src/images/error_directional-light.gif" />](https://www.youtube.com/watch?v=dEkOT3IngMQ);

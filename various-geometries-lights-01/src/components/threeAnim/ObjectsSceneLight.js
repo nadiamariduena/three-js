@@ -200,7 +200,27 @@ class ObjsScene extends Component {
     //
     //
     //
+    //---------------------
+    //   Directional Light
+    //---------------------
+    this.directionalLight = new THREE.DirectionalLight("#ffffff");
+    this.directionalLight.position.set(0, 0, 0);
+    this.directionalLight.castShadow = true;
+    this.directionalLight.shadow.mapSize.width = 512; // default
+    this.directionalLight.shadow.mapSize.height = 512; // default
+    this.directionalLight.shadow.camera.near = 0.5;
+    this.directionalLight.shadow.camera.far = 1000;
+    this.directionalLight.shadow.camera.left = -15;
+    this.directionalLight.shadow.camera.right = 15;
+    this.directionalLight.shadow.camera.top = 15;
+    this.directionalLight.shadow.camera.bottom = -15;
+    this.scene.add(this.directionalLight);
+
+    // The light points to the flat ground
     //
+    //
+    //
+    this.directionalLight.target = this.plane;
   };
   /*
   
