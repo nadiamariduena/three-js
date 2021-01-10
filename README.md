@@ -12,3 +12,12 @@
 - In the following repo you will learn how to create a basic light set up (responsive)
 
 [<img src="./src/images/preview_lights_part0.gif" />](https://github.com/nadiamariduena/three-js/tree/master/various-geomatries-lights)
+
+<br>
+<br>
+
+# Lights 01
+
+
+
+[<img src="./src/images/spotlight_poinlight_light.gif"/>](https://github.com/nadiamariduena/three-js/tree/master/various-geometries-lights-01)

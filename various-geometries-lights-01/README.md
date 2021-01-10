@@ -93,3 +93,4 @@ this.scene.add(this.pointLight);
 ```
 
 [<img src="./src/images/spotlight_poinlight_light.gif"/>](https://dnassler.wordpress.com/2016/03/22/threejs-with-pointlight-shadows-and-star-sphere/)
+<!--  -->
