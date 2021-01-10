@@ -1079,3 +1079,23 @@ class ObjsScene extends Component {
 ```
 
 [<img src="./src/images/preview-ambientLight.jpg" />]();
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+## ☁️ HemisphereLight ☁️
+
+- The **AmbientLight** main function of the above is to **add a color to the environment**, and **there is another light source** that adds color to the environment, **HemisphereLight**. 
+<br>
+
+> HemisphereLightIt is a light source closer to nature. 
+
+- Its **first parameter** represents the color of the sky, the **second parameter** represents the color of the ground (or environment), and the **third parameter**intensity represents the intensity. 
+
+<br>
+
+- We replace the previous example **AmbientLight** with as HemisphereLightfollows:
