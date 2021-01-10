@@ -1089,13 +1089,33 @@ class ObjsScene extends Component {
 
 ## ☁️ HemisphereLight ☁️
 
-- The **AmbientLight** main function of the above is to **add a color to the environment**, and **there is another light source** that adds color to the environment, **HemisphereLight**. 
+- The **AmbientLight** main function of the above is to **add a color to the environment**, and **there is another light source** that adds color to the environment, **HemisphereLight**.
+  <br>
+
+> HemisphereLightIt is a light source closer to nature.
+
+- Its **first parameter** represents the color of the sky, the **second parameter** represents the color of the ground (or environment), and the **third parameter**intensity represents the intensity.
+
 <br>
 
-> HemisphereLightIt is a light source closer to nature. 
+- We replace the previous example **AmbientLight** with as **HemisphereLight** as follows:
 
-- Its **first parameter** represents the color of the sky, the **second parameter** represents the color of the ground (or environment), and the **third parameter**intensity represents the intensity. 
+```javascript
+//---------------------
+//    AmbientLight
+//---------------------
+//
+// HIDE / REPLACE THIS:
+//
+var hemisphereLight = new THREE.HemisphereLight("#87ceeb", "#f5deb3", 0.4);
+scene.add(hemisphereLight);
 
-<br>
-
-- We replace the previous example **AmbientLight** with as HemisphereLightfollows:
+// FOR THIS:
+//
+//---------------------
+//    HemisphereLight
+//---------------------
+//
+this.hemisphereLight = new THREE.HemisphereLight("#87ceeb", "#f5deb3", 0.4);
+this.scene.add(this.hemisphereLight);
+```
