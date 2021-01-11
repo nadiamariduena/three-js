@@ -1,0 +1,23 @@
+[
+  {
+    "id": "0",
+    "img1": "images/preview1.gif",
+    "alt": "image",
+    "textHeader": "TEXT",
+    "textParagraph": "Lorem ipsum dolor sit, amet consectetur adipisicing elit Ea neque, qui nobis sit, amet consectetur adipisicing elit. Ea neque."
+  },
+  {
+    "id": "1",
+    "img1": "images/fluxusshop_2.gif",
+    "alt": "image",
+    "textHeader": "TEXT",
+    "textParagraph": "Lorem ipsum dolor sit, amet consectetur adipisicing elit Ea neque, qui nobis sit, amet consectetur adipisicing elit. Ea neque."
+  },
+  {
+    "id": "2",
+    "img1": "images/preview1.gif",
+    "alt": "image",
+    "textHeader": "TEXT",
+    "textParagraph": "Lorem ipsum dolor sit, amet consectetur adipisicing elit Ea neque, qui nobis sit, amet consectetur adipisicing elit. Ea neque."
+  }
+]

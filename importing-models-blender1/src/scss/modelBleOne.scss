@@ -1,0 +1,24 @@
+//
+//
+//
+.modelBleOne-wrapper {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background-color: rgb(140, 167, 138);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font: 12px sans-serif;
+  .modelBleOne {
+    width: 90%;
+    margin: 0 5%;
+    text-align: center;
+    max-width: 800px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 5px solid #000;
+  }
+}
