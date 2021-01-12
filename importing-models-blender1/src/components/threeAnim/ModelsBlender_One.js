@@ -110,48 +110,14 @@ class ObjsScene extends Component {
     this.scene.add(this.plane);
     //
     //
-    //
-    //
-    //
-    //
 
-    const loaderMo = new GLTFLoader();
-    loaderMo.load("./images/vas.gltf", (gltf) => {
-      gltf.scene.traverse((model) => {
-        this.castShadow = true;
-        model.position.x = 0;
-        model.position.y = 2.8;
-        model.position.z = -2;
-        // model.scale.set(1, 1, 1);
-        // i will check it later
-        // https://stackoverflow.com/questions/24723471/three-js-scale-model-with-scale-set-or-increase-model-size
-      });
-      this.scene.add(gltf.scene);
-    });
-    /*
-
-I DIDNT KNOW THIS 
-
-    .traverse ( callback : Function ) : null
-callback - A function with as first argument an object3D object.
-
-Executes the callback on this object and all descendants.
-Note: Modifying the scene graph inside the callback is discouraged.
-    
-    
-    */
-
-    //
-    //
-    //
-    //
     //
     //---------------------
     //   Directional Light
     //---------------------
     //
     //
-    //
+
     this.directionalLight = new THREE.DirectionalLight("#ffffff");
     this.directionalLight.position.set(0, 0, 0);
     this.directionalLight.castShadow = true;
@@ -163,6 +129,8 @@ Note: Modifying the scene graph inside the callback is discouraged.
     this.directionalLight.shadow.camera.right = 15;
     this.directionalLight.shadow.camera.top = 15;
     this.directionalLight.shadow.camera.bottom = -15;
+
+    //
     this.scene.add(this.directionalLight);
 
     // The light points to the flat ground
@@ -172,28 +140,23 @@ Note: Modifying the scene graph inside the callback is discouraged.
     this.directionalLight.target = this.plane;
     //
     //
-    //
-    //---------------------
-    //    AmbientLight
-    //---------------------
+    const loaderMo = new GLTFLoader();
+    loaderMo.load("./images/testo_cube.gltf", (gltf) => {
+      gltf.scene.traverse((model) => {
+        model.castShadow = true;
 
-    this.ambientLight = new THREE.AmbientLight("#9370DB");
-    this.scene.add(this.ambientLight);
-    //
-    //
-    //
-    //
-    //---------------------
-    //    HemisphereLight
-    //---------------------
-    //
-    this.hemisphereLight = new THREE.HemisphereLight("#87ceeb", "#f5deb3", 0.4);
-    this.scene.add(this.hemisphereLight);
-    //
-    //
+        model.position.x = 0;
+        model.position.y = 0;
+        model.position.z = 0;
+        // model.scale.set(1, 1, 1);
+        // i will check it later
+        // https://stackoverflow.com/questions/24723471/three-js-scale-model-with-scale-set-or-increase-model-size
+      });
+
+      this.scene.add(gltf.scene);
+    });
   };
   //
-  // //
 
   /*
   
@@ -204,7 +167,6 @@ Note: Modifying the scene graph inside the callback is discouraged.
 
   
   */
-  ModelOne = () => {};
 
   // 3
   startAnimationLoop = () => {

@@ -10,7 +10,7 @@
 
 <br>
 
-- It took me few hours to design something and nearly the whole day to try to apply it to the react project, but at the end I was lucky to find "life saving " tutorials, that could give me an idea of how to make it work, because unfortunately most of the articles are outdated.
+- It took me few hours to design something and nearly the whole day to try to apply it to the react project, but at the end I was lucky to find "life saving " tutorials" that could give me an idea of how to make it work, because unfortunately most of the articles are outdated.
   <br>
 
 [Loading Models (using Three.js) - Both Static and Animated!](https://youtu.be/8n_v1aJmLmc)
@@ -24,7 +24,7 @@
 <br>
 <br>
 
-#### THE BLENDER MODEL 🌵
+## THE BLENDER MODEL 🌵
 
 - I HAD THE CHOICE of using a 3d generator but I really felt like challenging myself today, **after ALL there s nothing else you can do in CORONA times**.
 
@@ -35,8 +35,22 @@
 [<img src="./src/images/blender-model1_preview.gif" />]()
 
 <br>
-<br>
-<hr>
+
+- One of the inconveniences I could encounter when applying the model to the app, was what the **positioning and the scaling**,
+  since I am still confused about how to group the objects in Blender, its a bit messy when importing it to the project, thats why the obj's are everywhere, also due to the **group/merging** of the objects, **a part of the tree** is missing.
+
+  <br>
+
+  ##### Apparently there s a way to scale the model before exporting it (from BLENDER) but I am curious about the scaling in threejs, so i will figure it out later.
+
+  <br>
+
+[<img src="./src/images/adding-the-blendermodel-to-the-scene.gif" />]()
 
 <br>
 <br>
+<hr>
+<br>
+<br>
+
+#### HOW TO EXPORT A MODEL from BLENDER ?
