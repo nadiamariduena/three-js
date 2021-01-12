@@ -34,7 +34,6 @@ class ObjsScene extends Component {
     const height = this.eleModelBlOne.clientHeight;
     //
 
-    //
     this.scene = new THREE.Scene();
     this.camera = new THREE.PerspectiveCamera(
       65, // fov = field of view
@@ -132,22 +131,47 @@ class ObjsScene extends Component {
 
     //
     this.scene.add(this.directionalLight);
-
     // The light points to the flat ground
-    //
-    //
-    //
     this.directionalLight.target = this.plane;
     //
     //
+    //
+    //
+    //------------------------
+    // #1 MODEL
     const loaderMo = new GLTFLoader();
-    loaderMo.load("./images/testo_cube.gltf", (gltf) => {
+    loaderMo.load("./images/tree2-before-join.gltf", (gltf) => {
       gltf.scene.traverse((model) => {
+        if (model.material) model.material.metalness = 0.08;
         model.castShadow = true;
+        model.scale.set(0.4, 0.4, 0.4);
+        model.position.x = -2;
+        model.position.y = 1.7;
+        model.position.z = 1.2;
+      });
 
-        model.position.x = 0;
-        model.position.y = 0;
-        model.position.z = 0;
+      this.scene.add(gltf.scene);
+    });
+    //
+    //
+    //
+    //
+    //
+    //------------------------
+    // #2 MODEL (lying on the side)
+    loaderMo.load("./images/tree2-before-join3.gltf", (gltf) => {
+      gltf.scene.traverse((model) => {
+        // without the 'if' statement, you would not be able to see the result
+        if (model.material) model.material.metalness = 0.03;
+        // 0.01; lighter, 1  dark, 5 extremely dark
+        model.castShadow = true;
+        model.scale.set(0.4, 0.4, 0.4);
+        // this.plane.rotation.x = -0.5 * Math.PI; position.y = -2;
+        model.rotation.x = -10;
+
+        model.position.x = -1.5;
+        model.position.y = 2.3;
+        model.position.z = -4.2;
         // model.scale.set(1, 1, 1);
         // i will check it later
         // https://stackoverflow.com/questions/24723471/three-js-scale-model-with-scale-set-or-increase-model-size
@@ -155,17 +179,27 @@ class ObjsScene extends Component {
 
       this.scene.add(gltf.scene);
     });
+
+    //---------------------
+    //    AmbientLight
+    //---------------------
+
+    // this.ambientLight = new THREE.AmbientLight("#9370DB");
+    // this.scene.add(this.ambientLight);
+    //s
+    //---------------------
+    //    HemisphereLight
+    //---------------------
+    //
+    // this.hemisphereLight = new THREE.HemisphereLight("#87ceeb", "#f5deb3", 0.4);
+    // this.scene.add(this.hemisphereLight);
+    // //
+    //
   };
-  //
 
   /*
   
-  
-  
-  
-  
 
-  
   */
 
   // 3
@@ -182,12 +216,6 @@ class ObjsScene extends Component {
   //
   //
   /*
-  
-  
-  
-  
-  
-  
   
   
   
@@ -209,13 +237,7 @@ class ObjsScene extends Component {
   /*
   
   
-  
-  
-  
-  
-  
-  
-  
+
   */
   render() {
     return (
