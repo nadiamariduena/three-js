@@ -80,7 +80,7 @@
 <br>
 <br>
 
-#### I had the wrong lights and also that I wasn't exporting it correctly
+#### I had the wrong lights and I wasn't exporting it correctly
 
 - Click on the image to read the article
 
