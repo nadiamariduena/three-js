@@ -8,6 +8,7 @@
 
   <br>
   <br>
+
 ## BUT BEFORE ...
 
 ### What are the differences between WebGL, three.js?
@@ -44,7 +45,14 @@
 
 👾 👾 👾
 
-- The author of this tutorial is
+##### The author of this tutorial is:
+
+- Written by: Marina Vorontsova
+
+[Starting with React 16 and Three.js in 5 minutes](https://blog.bitsrc.io/starting-with-react-16-and-three-js-in-5-minutes-3079b8829817)
+
+- Author:
+
   [Alexander Solovyev](https://github.com/supromikali)
 
 <br>
