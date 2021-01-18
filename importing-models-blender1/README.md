@@ -86,6 +86,8 @@
 
 [Ambient Light and GLTF models not working - Results in black model](https://discourse.threejs.org/t/ambient-light-and-gltf-models-not-working-results-in-black-model/7428/4)
 
+[Glb model is very dark](https://discourse.threejs.org/t/solved-glb-model-is-very-dark/6258)
+
 [<img src="./src/images/zip3_preview.gif" />]()
 <br>
 
