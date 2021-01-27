@@ -356,4 +356,6 @@ Converting JavaScript Threejs Examples to TypeScript Projects
 
 <br>
 
-[<img src="./src/images/fog-readme.gif"/>](https://github.com/nadiamariduena/palmyra-red)
+##### Click on the image to go to the Repo:
+
+[<img src="./src/images/fog-readme.gif"/>](https://github.com/nadiamariduena/nm-rain1-draco-compress)
