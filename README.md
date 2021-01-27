@@ -310,7 +310,23 @@ Converting JavaScript Threejs Examples to TypeScript Projects
 
 [THREE.js and Typescript ](https://github.com/nadiamariduena/udemy-threejs-typescript)
 
+<br>
+<br>
+<hr>
+<br>
+<br>
 
+# Importing Draco to the scene "solved" 🐖
+
+- Compressing with draco and cmake and Blender
+
+- Importing Draco to the scene "solved"
+
+- GUI panel example
+
+<br>
+
+[Importing Draco to the scene](https://github.com/nadiamariduena/blender_and_draco-compression)
 
 <br>
 <br>
@@ -318,16 +334,26 @@ Converting JavaScript Threejs Examples to TypeScript Projects
 <br>
 <br>
 
-#   Importing Draco to the scene "solved" 🐖
+# PURPLE RAIN .... 🔥
 
-- Compressing with draco and cmake and Blender
-
-- Importing Draco to the scene "solved"
-
--  GUI panel example
-
--  
+- Setting up a basic scene
 
 <br>
 
-[Importing Draco to the scene](https://github.com/nadiamariduena/blender_and_draco-compression)
+- **Cameras** here are set up differently because we have **to look up to the sky**
+
+<br>
+
+- Also I had to **Hide** the **{ OrbitControls }** as it clashes with the scene in this project
+
+<br>
+
+- If you use the { OrbitControls } you will see the image squared shape (I still have to figure out how to prevent that), but if you remove the Orbits.. you wont see that
+
+<br>
+
+[PURPLE RAIN , Cloud and Fog](https://github.com/nadiamariduena/nm-rain1-draco-compress)
+
+<br>
+
+[<img src="./src/images/fog-readme.gif"/>](https://github.com/nadiamariduena/palmyra-red)
