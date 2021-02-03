@@ -368,19 +368,31 @@ Converting JavaScript Threejs Examples to TypeScript Projects
 # ADDING PURPLE RAIN EFFECTS TO THE SCENE
 
 - I added the rain , the clouds and the flashlight to the scene
-<br>
+  <br>
 
 - I also added a CUBE to simulate a world
-<br>
+  <br>
 
 - I added 6 images to each side of the cube to simulate it
-<br>
+  <br>
 
 - I added a zoom limitation , so that the user cant zoom out after the specified limits
-
 
 ##### But since i didnt like it i will remove it in the next test
 
 <br>
 
 [<img src="./src/images/cube_littleworld_2.gif"/>](https://github.com/nadiamariduena/nm-purplerain-draco)
+
+<br>
+<hr>
+<br>
+<br>
+
+### 👾
+
+# TESTING First Person Control and PointerLockControls
+
+[ First Person Control and PointerLockControls](https://github.com/nadiamariduena/firstpersoncontrol-threejs)
+
+[<img src="./src/images/First_Person_Control.gif"/>](https://github.com/nadiamariduena/firstpersoncontrol-threejs)
