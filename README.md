@@ -391,8 +391,23 @@ Converting JavaScript Threejs Examples to TypeScript Projects
 
 ### 👾
 
-# TESTING First Person Control and PointerLockControls
+# FIRST PERSON CONTROLS
 
-[ First Person Control and PointerLockControls](https://github.com/nadiamariduena/firstpersoncontrol-threejs)
+[ First Person Controls](https://github.com/nadiamariduena/firstpersoncontrol-threejs)
 
 [<img src="./src/images/First_Person_Control.gif"/>](https://github.com/nadiamariduena/firstpersoncontrol-threejs)
+
+<br>
+<hr>
+<br>
+<br>
+
+### 👾
+
+# POINTER LOCK CONTROLS
+
+(in progress)
+
+[POINTER LOCK CONTROLS](https://github.com/nadiamariduena/nm-pointer-lock-control-purplerain)
+
+[<img src="./src/images/pointer-lock-controls.gif"/>](https://github.com/nadiamariduena/nm-pointer-lock-control-purplerain)
