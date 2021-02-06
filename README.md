@@ -429,3 +429,26 @@ Converting JavaScript Threejs Examples to TypeScript Projects
 - Click on the image to try it:
 
 [<img src="./src/images/pointer-lock-controls.gif"/>](https://nadiamariduena.github.io/nm-pointer-lock-control-purplerain/)
+
+<br>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<br>
+<br>
+
+# 👾👾👾
+
+### DRAG CONTROLS
+
+- Code and commun issues:
+
+[DRAG CONTROLS](https://github.com/nadiamariduena/nm-drag-controls-purplerain)
+
+<br>
+
+- Click on the image to try it:
+
+[<img src="./src/images/draControls.gif"/>](https://nadiamariduena.github.io/nm-drag-controls-purplerain/)
