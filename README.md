@@ -365,7 +365,7 @@ Converting JavaScript Threejs Examples to TypeScript Projects
 <br>
 <br>
 
-# ADDING PURPLE RAIN EFFECTS TO THE SCENE
+### ADDING PURPLE RAIN EFFECTS TO THE SCENE
 
 - I added the rain , the clouds and the flashlight to the scene
   <br>
@@ -385,29 +385,47 @@ Converting JavaScript Threejs Examples to TypeScript Projects
 [<img src="./src/images/cube_littleworld_2.gif"/>](https://github.com/nadiamariduena/nm-purplerain-draco)
 
 <br>
+<br>
+<br>
 <hr>
 <br>
 <br>
+<br>
+<br>
 
-### 👾
+# 👾👾👾
 
-# FIRST PERSON CONTROLS
+### FIRST PERSON CONTROLS
+
+- Code and commun issues:
 
 [ First Person Controls](https://github.com/nadiamariduena/firstpersoncontrol-threejs)
 
-[<img src="./src/images/First_Person_Control.gif"/>](https://github.com/nadiamariduena/firstpersoncontrol-threejs)
+<br>
 
+- Click on the image to try it:
+
+[<img src="./src/images/First_Person_Control.gif"/>](https://nadiamariduena.github.io/firstpersoncontrol-threejs/)
+
+<br>
+<br>
 <br>
 <hr>
 <br>
 <br>
+<br>
+<br>
 
-### 👾
+# 👾👾👾
 
-# POINTER LOCK CONTROLS
+### POINTER LOCK CONTROLS
 
-(in progress)
+- Code and commun issues:
 
 [POINTER LOCK CONTROLS](https://github.com/nadiamariduena/nm-pointer-lock-control-purplerain)
 
-[<img src="./src/images/pointer-lock-controls.gif"/>](https://github.com/nadiamariduena/nm-pointer-lock-control-purplerain)
+<br>
+
+- Click on the image to try it:
+
+[<img src="./src/images/pointer-lock-controls.gif"/>](https://nadiamariduena.github.io/nm-pointer-lock-control-purplerain/)
