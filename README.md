@@ -452,3 +452,26 @@ Converting JavaScript Threejs Examples to TypeScript Projects
 - Click on the image to try it:
 
 [<img src="./src/images/draControls.gif"/>](https://nadiamariduena.github.io/nm-drag-controls-purplerain/)
+
+<br>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<br>
+<br>
+
+# 👾👾👾
+
+### PHYSICS with CANNON (part 1)
+
+- Code and commun issues:
+
+[PHYSICS with Cannon 1](https://github.com/nadiamariduena/nm-physics-cannonjs)
+
+<br>
+
+- Click on the image to try it:
+
+[<img src="./src/images/physics-cannonjs_1.gif"/>](https://nadiamariduena.github.io/nm-physics-cannonjs/)
