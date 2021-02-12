@@ -1,20 +1,177 @@
-## WHERE ALL STARTED 🐖
+### THREEJS
+### Blender and Threejs
 
-#### Before i started with the react version, i practiced with a vanilla Flag version of the image below:
+ <br>
+<br>
+<br>
 
-[vanilla flag version](https://github.com/nadiamariduena/3d-waving-flag-threejs)
+# INTERMEDIARY
 
-- REACT THREE version
+### FIRST PERSON CONTROLS
 
-[<img src="./src/images/flag-test-vanillajs1.gif" />](https://github.com/nadiamariduena/3dflag-threejs-react)
+- Code and commun issues:
+
+[ First Person Controls](https://github.com/nadiamariduena/firstpersoncontrol-threejs)
 
 <br>
+
+- Click on the image to test it:
+
+[<img src="./src/images/First_Person_Control.gif"/>](https://nadiamariduena.github.io/firstpersoncontrol-threejs/)
+
+ <br>
+<br>
+<br>
+
+### POINTER LOCK CONTROLS
+
+- Code and commun issues:
+
+[POINTER LOCK CONTROLS](https://github.com/nadiamariduena/nm-pointer-lock-control-purplerain)
+
+<br>
+
+- Click on the image to try it:
+
+[<img src="./src/images/pointer-lock-controls.gif"/>](https://nadiamariduena.github.io/nm-pointer-lock-control-purplerain/)
+
+<br>
+<br>
+<br>
+
+### DRAG CONTROLS
+
+- Code and commun issues:
+
+[DRAG CONTROLS](https://github.com/nadiamariduena/nm-drag-controls-purplerain)
+
+<br>
+
+- Click on the image to try it:
+
+[<img src="./src/images/draControls.gif"/>](https://nadiamariduena.github.io/nm-drag-controls-purplerain/)
+
+ <br>
+<br>
+ 
+<br>
+  <br>
+
+### PHYSICS with CANNON (part 1)
+
+- Code and commun issues:
+
+[PHYSICS with Cannon 1](https://github.com/nadiamariduena/nm-physics-cannonjs)
+
+- Click on the image to try it:
+
+[<img src="./src/images/physics-cannonjs_1.gif"/>](https://nadiamariduena.github.io/nm-physics-cannonjs/)
+
+<br>
+<br>
+<br>
+
+### Animating with Perlin
+
+- Code and commun issues:
+
+[DRAG CONTROLS](https://github.com/nadiamariduena/nm-drag-controls-purplerain)
+
+<br>
+
+- Click on the image to try it:
+
+[<img src="./src/images/forms2.gif"/>](https://nadiamariduena.github.io/nm-drag-controls-purplerain/)
+
+<br>
+<br>
+<br>
+
+# COMPRESSING
+
+- Compressing with draco
+
+- Draco and cmake
+
+- cmake installation
+
+- glTF Pipeline compression
+
+<br>
+
+[DRACO | CMAKE Compression](https://github.com/nadiamariduena/nm-final-three-scene)
+
+<br>
+<br>
+
+### Importing DRACO to the scene "solved" 🐖
+
+- Compressing with draco and cmake and Blender
+
+- Importing Draco to the scene "solved"
+
+- GUI panel example
+
+<br>
+
+[Importing Draco to the scene](https://github.com/nadiamariduena/blender_and_draco-compression)
+
+ <br>
 <br>
 <hr>
 <br>
+  <br>
+
+### Rain and Fog ....
+
+- Setting up a basic scene
+
+- **Cameras** here are set up differently because we have **to look up to the sky**
+
+- Also I had to **Hide** the **{ OrbitControls }** as it clashes with the scene in this project
+
+- If you use the { OrbitControls } you will see the image squared shape (I still have to figure out how to prevent that), but if you remove the Orbits.. you wont see that
+
+[PURPLE RAIN , Cloud and Fog](https://github.com/nadiamariduena/nm-rain1-draco-compress)
+
 <br>
 
-## BASIC RESPONSIVE SCENE
+##### Click on the image to go to the Repo:
+
+[<img src="./src/images/fog-readme.gif"/>](https://github.com/nadiamariduena/nm-rain1-draco-compress)
+
+<br>
+<br>
+<br>
+
+### Purple Rain
+
+- I added the rain , the clouds and the flashlight to the scene
+  <br>
+
+- I also added a CUBE to simulate a world
+  <br>
+
+- I added 6 images to each side of the cube to simulate it
+  <br>
+
+- I added a zoom limitation , so that the user cant zoom out after the specified limits
+
+##### But since i didnt like it i will remove it in the next test
+
+<br>
+
+[<img src="./src/images/cube_littleworld_2.gif"/>](https://github.com/nadiamariduena/nm-purplerain-draco)
+
+ <br>
+<br>
+ 
+<br>
+  <br>
+
+# BEGINNER
+
+### BASIC RESPONSIVE SCENE
 
 - In the following project you will learn how to create a responsive scene (zoom in and zoom out )
 
@@ -26,19 +183,17 @@
 <br>
 <br>
 
-# Lights 0
+### Lights 0
 
 - In the following repo you will learn how to create a basic light set up (responsive)
 
 [<img src="./src/images/preview_lights_part0.gif" />](https://github.com/nadiamariduena/three-js/tree/master/various-geomatries-lights)
 
-<br>
-<br>
-<hr>
+<br> 
 <br>
 <br>
 
-# Lights 01
+### Lights 01
 
 [<img src="./src/images/MeshPhongMaterial.gif"/>](https://github.com/nadiamariduena/three-js/tree/master/various-geometries-lights-01)
 
@@ -51,11 +206,9 @@
 
 <br>
 <br>
-<hr>
-<br>
 <br>
 
-# Importing Models
+### Importing Models
 
 #### Models made with Blender (part 1)
 
@@ -75,12 +228,10 @@
 [<img src="./src/images/zip2_preview.gif"/>]()
 
 <br>
-<br>
-<hr>
-<br>
+ <br>
 <br>
 
-# Models made with Blender (part 2)
+### Models made with Blender (part 2)
 
 - creating models (learning how to) in Blender
 
@@ -95,12 +246,10 @@
 [<img src="./src/images/bouncing-island_DELTA1.gif"/>](https://github.com/nadiamariduena/scene-palmyra-one)
 
 <br>
-<br>
-<hr>
-<br>
+ <br>
 <br>
 
-# Models made with Blender (part 3)
+### Models made with Blender (part 3)
 
 - Understanding the Exporter Settings
 
@@ -124,37 +273,24 @@
 
 <br>
 <br>
-<hr>
-<br>
 <br>
 
-# COMPRESSING
+### FLAG SCENE
 
-- Compressing with draco
+- Using Math.sin to animate the vertices
 
-- Draco and cmake
+[<img src="./src/images/flag-test-vanillajs1.gif" />](https://github.com/nadiamariduena/3dflag-threejs-react)
 
-- cmake installation
-
-- glTF Pipeline compression
-
-<br>
-
-[DRACO | CMAKE Compression](https://github.com/nadiamariduena/nm-final-three-scene)
-
-<br>
 <br>
 <hr>
-<br>
-<br>
 
-# 🐖
+### UDEMY three
 
-# UDEMY three
+##### THREE.js and Typescript
 
-### THREE.js and Typescript
+[THREE.js and Typescript ](https://github.com/nadiamariduena/udemy-threejs-typescript)
 
-Preview
+<!-- Preview
 
 - Setup Development Environment
 
@@ -304,174 +440,8 @@ Preview
 
 - Add SSL
 
-Converting JavaScript Threejs Examples to TypeScript Projects
-
-<br>
-
-[THREE.js and Typescript ](https://github.com/nadiamariduena/udemy-threejs-typescript)
-
-<br>
-<br>
-<hr>
-<br>
-<br>
-
-# Importing Draco to the scene "solved" 🐖
-
-- Compressing with draco and cmake and Blender
-
-- Importing Draco to the scene "solved"
-
-- GUI panel example
-
-<br>
-
-[Importing Draco to the scene](https://github.com/nadiamariduena/blender_and_draco-compression)
-
-<br>
-<br>
-<hr>
-<br>
-<br>
-
-# PURPLE RAIN .... 🔥
-
-- Setting up a basic scene
-
-<br>
-
-- **Cameras** here are set up differently because we have **to look up to the sky**
-
-<br>
-
-- Also I had to **Hide** the **{ OrbitControls }** as it clashes with the scene in this project
-
-<br>
-
-- If you use the { OrbitControls } you will see the image squared shape (I still have to figure out how to prevent that), but if you remove the Orbits.. you wont see that
-
-<br>
-
-[PURPLE RAIN , Cloud and Fog](https://github.com/nadiamariduena/nm-rain1-draco-compress)
-
-<br>
-
-##### Click on the image to go to the Repo:
-
-[<img src="./src/images/fog-readme.gif"/>](https://github.com/nadiamariduena/nm-rain1-draco-compress)
-
-<br>
-<hr>
-<br>
-<br>
-
-### ADDING PURPLE RAIN EFFECTS TO THE SCENE
-
-- I added the rain , the clouds and the flashlight to the scene
-  <br>
-
-- I also added a CUBE to simulate a world
-  <br>
-
-- I added 6 images to each side of the cube to simulate it
-  <br>
-
-- I added a zoom limitation , so that the user cant zoom out after the specified limits
-
-##### But since i didnt like it i will remove it in the next test
-
-<br>
-
-[<img src="./src/images/cube_littleworld_2.gif"/>](https://github.com/nadiamariduena/nm-purplerain-draco)
+Converting JavaScript Threejs Examples to TypeScript Projects -->
 
 <br>
 <br>
 <br>
-<hr>
-<br>
-<br>
-<br>
-<br>
-
-# 👾👾👾
-
-### FIRST PERSON CONTROLS
-
-- Code and commun issues:
-
-[ First Person Controls](https://github.com/nadiamariduena/firstpersoncontrol-threejs)
-
-<br>
-
-- Click on the image to try it:
-
-[<img src="./src/images/First_Person_Control.gif"/>](https://nadiamariduena.github.io/firstpersoncontrol-threejs/)
-
-<br>
-<br>
-<br>
-<hr>
-<br>
-<br>
-<br>
-<br>
-
-# 👾👾👾
-
-### POINTER LOCK CONTROLS
-
-- Code and commun issues:
-
-[POINTER LOCK CONTROLS](https://github.com/nadiamariduena/nm-pointer-lock-control-purplerain)
-
-<br>
-
-- Click on the image to try it:
-
-[<img src="./src/images/pointer-lock-controls.gif"/>](https://nadiamariduena.github.io/nm-pointer-lock-control-purplerain/)
-
-<br>
-<br>
-<br>
-<hr>
-<br>
-<br>
-<br>
-<br>
-
-# 👾👾👾
-
-### DRAG CONTROLS
-
-- Code and commun issues:
-
-[DRAG CONTROLS](https://github.com/nadiamariduena/nm-drag-controls-purplerain)
-
-<br>
-
-- Click on the image to try it:
-
-[<img src="./src/images/draControls.gif"/>](https://nadiamariduena.github.io/nm-drag-controls-purplerain/)
-
-<br>
-<br>
-<br>
-<hr>
-<br>
-<br>
-<br>
-<br>
-
-# 👾👾👾
-
-### PHYSICS with CANNON (part 1)
-
-- Code and commun issues:
-
-[PHYSICS with Cannon 1](https://github.com/nadiamariduena/nm-physics-cannonjs)
-
-<br>
-
-- Click on the image to try it:
-
-[<img src="./src/images/physics-cannonjs_1.gif"/>](https://nadiamariduena.github.io/nm-physics-cannonjs/)
